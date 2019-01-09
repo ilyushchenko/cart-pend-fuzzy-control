@@ -13,23 +13,23 @@ DefuzzMethod='centroid'
 
 [Input1]
 Name='deltaQ'
-Range=[-3.14 3.14]
+Range=[-6.283 6.283]
 NumMFs=5
-MF1='NM':'trimf',[-4.71 -3.14 -1.57]
-MF2='NS':'trimf',[-3.14 -1.57 0]
-MF3='ZO':'trimf',[-1.57 0 1.57]
-MF4='PS':'trimf',[0 1.57 3.14]
-MF5='PM':'trimf',[1.57 3.14 4.71]
+MF1='NM':'trimf',[-9.424 -6.281 -3.142]
+MF2='NS':'trimf',[-4.4 -2.444 -0.5165]
+MF3='ZO':'trimf',[-0.9138 -0.0005431 1.114]
+MF4='PS':'trimf',[0.7141 2.444 4.14]
+MF5='PM':'trimf',[3.142 6.282 9.424]
 
 [Input2]
 Name='Q'
-Range=[-3.14 3.14]
+Range=[-6.283 6.283]
 NumMFs=5
-MF1='NM':'trimf',[-4.71 -3.14 -1.57]
-MF2='NS':'trimf',[-3.14 -1.57 0]
-MF3='ZO':'trimf',[-1.57 0 1.57]
-MF4='PS':'trimf',[0 1.57 3.14]
-MF5='PM':'trimf',[1.57 3.14 4.71]
+MF1='NM':'trimf',[-9.359 -6.219 -2.177]
+MF2='NS':'trimf',[-4.006 -2.02 -0.4159]
+MF3='ZO':'trimf',[-1.148 0 0.9142]
+MF4='PS':'trimf',[0.4479 2.211 4.039]
+MF5='PM':'trimf',[2.078 6.279 9.419]
 
 [Output1]
 Name='resultV'
