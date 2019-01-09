@@ -14,7 +14,7 @@ dT = 0.1;
 
 T = [];
 Y = [];
-y0 = [0; 0; 0; 3*pi/2];
+y0 = [0; 0; 3*pi/2; 3*pi/2];
 flurad = readfis('flurad.fis');
 up = readfis('uprad.fis');
 
@@ -42,19 +42,19 @@ end
 
 %%
 subplot(2,2,1);
-plot(T,Y(1, :))
+plot(T,Y(1, :));
 grid on;
 
 subplot(2,2,2);
-plot(T, Y(2, :))
+plot(T, Y(2, :));
 grid on;
 
 subplot(2,2,3);
-plot(T, Y(3, :))
+plot(T, Y(3, :));
 grid on;
 
 subplot(2,2,4);
-plot(T, Y(4, :))
+plot(T, Y(4, :));
 grid on
 
 %%
