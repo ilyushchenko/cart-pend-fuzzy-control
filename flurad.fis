@@ -1,0 +1,55 @@
+[System]
+Name='flurad'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=11
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='deltaQ'
+Range=[-3.14 3.14]
+NumMFs=5
+MF1='NM':'trimf',[-4.71 -3.14 -1.57]
+MF2='NS':'trimf',[-3.14 -1.57 0]
+MF3='ZO':'trimf',[-1.57 0 1.57]
+MF4='PS':'trimf',[0 1.57 3.14]
+MF5='PM':'trimf',[1.57 3.14 4.71]
+
+[Input2]
+Name='Q'
+Range=[-3.14 3.14]
+NumMFs=5
+MF1='NM':'trimf',[-4.71 -3.14 -1.57]
+MF2='NS':'trimf',[-3.14 -1.57 0]
+MF3='ZO':'trimf',[-1.57 0 1.57]
+MF4='PS':'trimf',[0 1.57 3.14]
+MF5='PM':'trimf',[1.57 3.14 4.71]
+
+[Output1]
+Name='resultV'
+Range=[-10 10]
+NumMFs=5
+MF1='NM':'trimf',[-15 -10 -5]
+MF2='NS':'trimf',[-10 -5 0]
+MF3='ZO':'trimf',[-5 0 5]
+MF4='PS':'trimf',[0 5 10]
+MF5='PM':'trimf',[5.053 10.05 15.05]
+
+[Rules]
+3 1, 1 (1) : 1
+3 2, 2 (1) : 1
+3 3, 3 (1) : 1
+3 4, 4 (1) : 1
+3 5, 5 (1) : 1
+2 2, 2 (1) : 1
+2 4, 3 (1) : 1
+4 2, 3 (1) : 1
+4 4, 4 (1) : 1
+1 3, 1 (1) : 1
+5 3, 5 (1) : 1
